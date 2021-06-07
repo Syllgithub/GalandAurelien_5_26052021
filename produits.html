@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ca67a0072e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="/media/images/15675819263013_image1.png" alt="Logo Orinoco"
+      /></a>
+      <nav>
+        <div class="search-bar">
+          <input type="search" placeholder="Rechercher un produit..." />
+          <button class="text-btn">Rechercher</button>
+          <button class="icon-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="icons">
+          <i class="far fa-heart"></i>
+          <a href="panier.html"><i class="fas fa-shopping-cart"></i></a>
+          <span id="cart-counter">1</span>
+          <i class="fas fa-user-circle"></i>
+        </div>
+      </nav>
+    </header>
+    <div id="product-content">
+      <div id="product-container">
+        <img src="" alt="" id="product-image" />
+        <div id="product-name-desc">
+          <h1 id="product-name"></h1>
+          <p id="product-description"></p>
+        </div>
+        <div id="product-container__to-cart">
+          <p id="product-price"></p>
+          <p id="product-lenses-title">Lentille</p>
+          <button id="product-add">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h2>Orinoco - Tous droits réservés.</h2>
+      <a href="#">Nous contacter</a>
+      <a href="#">Suggerer un produit</a>
+      <a href="#">Conditions de Vente</a>
+    </footer>
+  </body>
+  <script src="products.js"></script>
+  <script src="cart-count.js"></script>
+</html>

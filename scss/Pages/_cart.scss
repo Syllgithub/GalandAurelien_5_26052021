@@ -1,0 +1,47 @@
+#cart-content {
+  width: 85%;
+  margin: auto;
+  font-family: "MontSerrat";
+}
+.test {
+  background-color: lighten(#955eed, 30%);
+  border: 1px solid grey;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    font-family: "MontSerrat-bold";
+    width: 30%;
+  }
+  p {
+    width: 20%;
+  }
+  img {
+    width: 20%;
+  }
+  i {
+    width: 8%;
+    font-size: 20px;
+    color: blue;
+  }
+}
+
+#delete-cart {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 38px;
+  font-family: "MontSerrat";
+  font-size: 16px;
+  height: 40px;
+  border: 0;
+  background-color: lightgreen;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px lightgrey;
+  cursor: pointer;
+  display: none;
+}
+
+.cart-elements {
+  display: flex;
+}

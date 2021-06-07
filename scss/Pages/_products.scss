@@ -1,0 +1,101 @@
+#product-content {
+  background-color: lighten(#d07f45, 40%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #product-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    width: 80%;
+    margin-top: 50px;
+    @include desktop {
+      flex-direction: row;
+      width: 90%;
+    }
+    img {
+      border-radius: 3px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 1px 1px 15px lightgrey;
+      @include desktop {
+        width: 90%;
+      }
+    }
+    h1 {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      @include desktop {
+        margin-left: 40px;
+      }
+    }
+    &__to-cart {
+      width: 100%;
+      margin: auto;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 1px 1px 10px grey;
+      margin-bottom: 50px;
+      @include desktop {
+        margin-top: 0;
+        margin-left: 20px;
+        width: 85%;
+      }
+      #product-price {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 50px;
+        color: red;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #product-lenses-title {
+        height: 25px;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      select {
+        border: 1px solid #e2e2e2;
+        width: 90%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        font-size: 16px;
+        box-shadow: 1px 1px 5px lightgray;
+        outline: none;
+      }
+      #product-add {
+        width: 90%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgreen;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px lightgray;
+        margin-bottom: 15px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #product-description {
+    margin-top: 10px;
+    color: #955eed;
+    @include desktop {
+      margin-left: 40px;
+    }
+  }
+}
