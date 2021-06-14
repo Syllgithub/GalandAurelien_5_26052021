@@ -2,6 +2,43 @@
   width: 85%;
   margin: auto;
   font-family: "MontSerrat";
+  .total-cost {
+    border-bottom: 3px solid lightblue;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .cart-content-info {
+    border-bottom: 3px solid lightblue;
+    margin-left: auto;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 17px;
+    .item-name {
+      display: flex;
+      justify-content: flex-end;
+      width: 33%;
+    }
+    .item-lense {
+      width: 43%;
+      display: flex;
+      justify-content: center;
+    }
+    .item-quantity {
+      display: flex;
+      justify-content: flex-start;
+      width: 12%;
+    }
+    .item-cost {
+      width: 11%;
+    }
+  }
 }
 .test {
   background-color: lighten(#955eed, 30%);
@@ -12,11 +49,19 @@
   align-items: center;
   h2 {
     font-family: "MontSerrat-bold";
-    width: 30%;
+    width: 20%;
   }
   p {
     width: 20%;
+
+    &:last-child {
+      width: 10%;
+    }
   }
+  .cart-quantity {
+    width: 5%;
+  }
+
   img {
     width: 20%;
   }
@@ -28,9 +73,22 @@
 }
 
 #delete-cart {
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 38px;
+  width: 90%;
+  margin-top: 160px;
+  font-family: "MontSerrat";
+  font-size: 16px;
+  height: 40px;
+  border: 0;
+  background-color: lighten(red, 30%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px lightgrey;
+  cursor: pointer;
+  display: none;
+}
+
+#checkout {
+  width: 90%;
+  margin-top: 70px;
   font-family: "MontSerrat";
   font-size: 16px;
   height: 40px;
@@ -44,4 +102,23 @@
 
 .cart-elements {
   display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    #check-delete {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+#checkout-ok,
+#order-id {
+  font-family: "MontSerrat";
+  width: 95%;
+  margin: auto;
 }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ca67a0072e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Oniroco</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="/media/images/15675819263013_image1.png" alt="Logo Orinoco"
+      /></a>
+      <nav>
+        <div class="search-bar">
+          <input type="search" placeholder="Rechercher un produit..." />
+          <button class="text-btn">Rechercher</button>
+          <button class="icon-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="icons">
+          <i class="far fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-counter">1</span>
+          <i class="fas fa-user-circle"></i>
+        </div>
+      </nav>
+      <div class="slogan">
+        <h1>
+          Trouvez les meilleurs appareils photo professionnels au meilleur prix.
+        </h1>
+      </div>
+    </header>
+    <form id="form-checkout">
+      <div class="form-checkout__lastname">
+        <label for="lastname"><i class="fa fa-user"></i> Nom </label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Dupont"
+          required
+        />
+      </div>
+      <div class="form-checkout__firstname">
+        <label for="firstname"> Prénom </label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Jean"
+          required
+        />
+      </div>
+      <div class="form-checkout__email">
+        <label for="email"><i class="fa fa-envelope"></i> Email </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="jean.dupont@gmail.com"
+          required
+        />
+      </div>
+      <div class="form-checkout__phonenumber">
+        <label for="phonenumber"
+          ><i class="fas fa-mobile"></i> Téléphone
+        </label>
+        <input
+          type="tel"
+          name="phonenumber"
+          id="phonenumber"
+          pattern="[0-9]{10}"
+          placeholder="0611223344"
+          required
+        />
+      </div>
+      <div class="form-checkout__adress">
+        <label for="adress"
+          ><i class="fa fa-address-card-o"></i> Adresse
+        </label>
+        <input
+          type="text"
+          name="adress"
+          id="address"
+          placeholder="1 rue du Pont"
+          required
+        />
+      </div>
+      <div class="form-checkout__city">
+        <label for="city"><i class="fa fa-institution"></i> Ville </label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="Jeanville"
+          required
+        />
+      </div>
+      <div class="form-checkout__zipcode">
+        <label for="zipcode">Code postal </label>
+        <input
+          type="number"
+          name="zipcode"
+          id="zipcode"
+          placeholder="91000"
+          required
+        />
+      </div>
+
+      <div class="form-checkout__submit">
+        <input id="form-checkout__submit" type="submit" value="Commander" />
+      </div>
+    </form>
+    <footer>
+      <h2>Orinoco - Tous droits réservés.</h2>
+      <a href="#">Nous contacter</a>
+      <a href="#">Suggerer un produit</a>
+      <a href="#">Conditions de Vente</a>
+    </footer>
+    <div id="retour"></div>
+  </body>
+  <script src="order.js"></script>
+</html>

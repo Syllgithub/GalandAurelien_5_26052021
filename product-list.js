@@ -43,7 +43,8 @@ function createCameraElements(camerasFetch, i) {
   camContent[htmlElementsName[0]].appendChild(camContent.addCameraToCart);
   camContent.addCameraToCart.innerHTML = "Ajouter";
   camContent.addCameraToCart.addEventListener("click", () => {
-    cartNumbers(camerasFetch[i]);
+    cartNumbers(camerasFetch[i], camerasFetch[i].lenses[0]);
+    cartTotalCost(camerasFetch[i]);
   });
 }
 

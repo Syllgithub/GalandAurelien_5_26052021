@@ -27,8 +27,15 @@ fetch("http://localhost:3000/api/cameras/" + url.searchParams.get("id"))
       cameraOption.innerHTML = productFetch.lenses[i];
       productSelect.appendChild(cameraOption);
     }
+
+    let selectedLense = productFetch.lenses[0];
+    productSelect.addEventListener("change", (e) => {
+      selectedLense = e.target.value;
+    });
+
     document.getElementById("product-add").addEventListener("click", () => {
-      cartNumbers(productFetch);
+      cartNumbers(productFetch, selectedLense);
+      cartTotalCost(productFetch);
     });
   })
   .catch(function (err) {
