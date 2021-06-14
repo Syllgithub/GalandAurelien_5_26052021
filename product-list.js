@@ -52,7 +52,7 @@ function createCameraElements(camerasFetch, i) {
 //On va chercher l'api correspondante aux produits choisis
 //========================================================
 
-fetch("http://localhost:3000/api/cameras")
+fetch("https://p5oc.herokuapp.com/api/cameras")
   .then(function (res) {
     if (res.ok) {
       return res.json();

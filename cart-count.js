@@ -23,10 +23,8 @@ function cartNumbers(productFetched, selectedLense) {
 function setProduct(product, selectedLense) {
   let localItems = localStorage.getItem("productsInCart");
   localItems = JSON.parse(localItems);
-  let itemNumbers;
-  console.log(product);
 
-  let arrayProd = {
+  let productObject = {
     name: product.name,
     price: product.price,
     imageUrl: product.imageUrl,
@@ -35,22 +33,20 @@ function setProduct(product, selectedLense) {
     id: product._id,
   };
 
-  console.log(arrayProd);
-
   if (localItems != null) {
     if (localItems[product.name] == undefined) {
       localItems = {
         ...localItems,
-        [product.name]: arrayProd,
+        [product.name]: productObject,
       };
     }
     let itemQuantity = localItems[product.name].quantity;
-    arrayProd.quantity = itemQuantity + 1;
-    localItems[product.name].quantity = arrayProd.quantity;
+    productObject.quantity = itemQuantity + 1;
+    localItems[product.name].quantity = productObject.quantity;
   } else {
-    arrayProd.quantity = 1;
+    productObject.quantity = 1;
     localItems = {
-      [product.name]: arrayProd,
+      [product.name]: productObject,
     };
   }
 

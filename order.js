@@ -15,7 +15,7 @@ function sendOrder(e) {
     city: document.getElementById("city").value,
     email: document.getElementById("email").value,
   };
-  fetch("http://localhost:3000/api/cameras/order", {
+  fetch("https://p5oc.herokuapp.com/api/cameras/order", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

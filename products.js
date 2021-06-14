@@ -1,6 +1,6 @@
 const url = new URL(window.location.href);
 
-fetch("http://localhost:3000/api/cameras/" + url.searchParams.get("id"))
+fetch("https://p5oc.herokuapp.com/api/cameras/" + url.searchParams.get("id"))
   .then(function (res) {
     if (res.ok) {
       return res.json();
