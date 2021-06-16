@@ -75,3 +75,22 @@
     }
   }
 }
+
+.input-success {
+  background-color: lighten(lightgreen, 20%);
+}
+.input-failed {
+  background-color: lighten(red, 35%);
+}
+
+small {
+  i {
+    margin-left: 10px;
+    color: lighten(green, 5%);
+  }
+}
+
+label + div {
+  display: flex;
+  align-items: center;
+}

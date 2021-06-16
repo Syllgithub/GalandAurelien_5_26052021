@@ -37,81 +37,80 @@
         </h1>
       </div>
     </header>
-    <form id="form-checkout">
+    <form id="form-checkout" method="POST">
       <div class="form-checkout__lastname">
         <label for="lastname"><i class="fa fa-user"></i> Nom </label>
-        <input
-          type="text"
-          name="lastname"
-          id="lastname"
-          placeholder="Dupont"
-          required
-        />
+        <div>
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Dupont"
+          /><small></small>
+        </div>
       </div>
       <div class="form-checkout__firstname">
         <label for="firstname"> Prénom </label>
-        <input
-          type="text"
-          name="firstname"
-          id="firstname"
-          placeholder="Jean"
-          required
-        />
+        <div>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Jean"
+          /><small></small>
+        </div>
       </div>
       <div class="form-checkout__email">
         <label for="email"><i class="fa fa-envelope"></i> Email </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="jean.dupont@gmail.com"
-          required
-        />
+        <div>
+          <input
+            type="text"
+            name="email"
+            placeholder="jean.dupont@gmail.com"
+          /><small></small>
+        </div>
       </div>
       <div class="form-checkout__phonenumber">
         <label for="phonenumber"
           ><i class="fas fa-mobile"></i> Téléphone
         </label>
-        <input
-          type="tel"
-          name="phonenumber"
-          id="phonenumber"
-          pattern="[0-9]{10}"
-          placeholder="0611223344"
-          required
-        />
+        <div>
+          <input
+            type="text"
+            name="phonenumber"
+            placeholder="0611223344"
+          /><small></small>
+        </div>
       </div>
       <div class="form-checkout__adress">
-        <label for="adress"
+        <label for="address"
           ><i class="fa fa-address-card-o"></i> Adresse
         </label>
-        <input
-          type="text"
-          name="adress"
-          id="address"
-          placeholder="1 rue du Pont"
-          required
-        />
+        <div>
+          <input
+            type="text"
+            name="address"
+            placeholder="1 rue du Pont"
+          /><small></small>
+        </div>
       </div>
       <div class="form-checkout__city">
         <label for="city"><i class="fa fa-institution"></i> Ville </label>
-        <input
-          type="text"
-          name="city"
-          id="city"
-          placeholder="Jeanville"
-          required
-        />
+        <div>
+          <input
+            type="text"
+            name="city"
+            placeholder="Jeanville"
+          /><small></small>
+        </div>
       </div>
       <div class="form-checkout__zipcode">
         <label for="zipcode">Code postal </label>
-        <input
-          type="number"
-          name="zipcode"
-          id="zipcode"
-          placeholder="91000"
-          required
-        />
+        <div>
+          <input
+            type="text"
+            name="zipcode"
+            placeholder="91000"
+          /><small></small>
+        </div>
       </div>
 
       <div class="form-checkout__submit">

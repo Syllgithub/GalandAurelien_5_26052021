@@ -135,17 +135,17 @@ table {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/media/fonts/Montserrat-Medium.ttf");
+  src: url("../../media/fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
   font-family: "Montserrat-bold";
-  src: url("/media/fonts/Montserrat-Bold.ttf");
+  src: url("../../media/fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
   font-family: "LyLaS";
-  src: url("/media/fonts/LoveYaLikeASister-Regular.ttf");
+  src: url("../../media/fonts/LoveYaLikeASister-Regular.ttf");
 }
 
 header {
@@ -981,5 +981,27 @@ footer a {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
+}
+
+.input-success {
+  background-color: #e8fce8;
+}
+
+.input-failed {
+  background-color: #ffb3b3;
+}
+
+small i {
+  margin-left: 10px;
+  color: #009a00;
+}
+
+label + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
