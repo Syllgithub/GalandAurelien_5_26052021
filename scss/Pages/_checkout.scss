@@ -2,13 +2,16 @@
   font-family: "MontSerrat";
   margin-left: 40px;
   background-color: lighten(#995eeb, 28%);
-  width: 50%;
+  width: 80%;
   border-radius: 5px;
   box-shadow: 1px 1px 5px #e2e2e2;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 20px;
+  @include desktop {
+    width: 50%;
+  }
   .form-checkout {
     &__lastname,
     &__firstname,
@@ -16,11 +19,14 @@
     &__phonenumber,
     &__city,
     &__zipcode {
-      width: 48%;
+      width: 100%;
       height: 80px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      @include desktop {
+        width: 48%;
+      }
 
       label {
         margin-left: 15px;
