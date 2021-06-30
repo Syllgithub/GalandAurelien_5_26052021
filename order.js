@@ -165,6 +165,8 @@ function sendOrder(e) {
         confirmationTab();
       })
       .catch((error) => console.log("erreur : ", error));
+  } else {
+    alert("Merci de bien vouloir remplir tous les champs correctement.");
   }
 }
 

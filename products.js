@@ -36,7 +36,17 @@ fetch("https://p5oc.herokuapp.com/api/cameras/" + url.searchParams.get("id"))
     document.getElementById("product-add").addEventListener("click", () => {
       cartNumbers(productFetch, selectedLense);
       cartTotalCost(productFetch);
+      document.getElementById("box-content").style.display = "block";
     });
+    let span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+      document.getElementById("box-content").style.display = "none";
+    };
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("box-content")) {
+        document.getElementById("box-content").style.display = "none";
+      }
+    };
   })
   .catch(function (err) {
     document.getElementById("product-content").innerHTML +=

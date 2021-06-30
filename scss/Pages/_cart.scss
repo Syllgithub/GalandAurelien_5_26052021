@@ -126,8 +126,47 @@
 }
 
 #checkout-ok,
-#order-id {
+#order-id,
+#total {
   font-family: "MontSerrat";
   width: 95%;
   margin: auto;
+  line-height: 30px;
+  h2 {
+    font-family: "MontSerrat-bold";
+    margin-top: 20px;
+    border-top: 1px solid lightblue;
+    height: 80px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  p {
+    border-bottom: 1px solid lightblue;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+}
+
+#home {
+  font-family: "Montserrat";
+
+  width: 100%;
+
+  margin-left: 30px;
+  margin-top: 20px;
+  a {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightblue;
+    width: 20%;
+    height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
 }

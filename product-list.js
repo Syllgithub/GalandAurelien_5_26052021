@@ -45,9 +45,19 @@ function createCameraElements(camerasFetch, i) {
   camContent.addCameraToCart.addEventListener("click", () => {
     cartNumbers(camerasFetch[i], camerasFetch[i].lenses[0]);
     cartTotalCost(camerasFetch[i]);
+    document.getElementById("box-content").style.display = "block";
   });
 }
 
+let span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+  document.getElementById("box-content").style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == document.getElementById("box-content")) {
+    document.getElementById("box-content").style.display = "none";
+  }
+};
 //========================================================
 //On va chercher l'api correspondante aux produits choisis
 //========================================================
